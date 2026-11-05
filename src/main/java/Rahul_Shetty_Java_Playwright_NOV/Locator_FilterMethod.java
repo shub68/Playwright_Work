@@ -29,8 +29,10 @@ public class Locator_FilterMethod {
 		page.navigate("https://eventhub.rahulshettyacademy.com/events");
 		Locator loc=page.getByTestId("event-card");
 		System.out.println(loc.count());//to get count of locators
+		//Approch 1
 		Locator loc1=loc.filter(new Locator.FilterOptions().setHasText("World Tech Summit"));
 		PlaywrightAssertions.assertThat(loc1).isVisible();
+		//Approch 2
 		PlaywrightAssertions.assertThat(loc.filter(new Locator.FilterOptions().setHasText("World Tech Summit"))).isVisible();
 		page.close();
 		bcn.close();
