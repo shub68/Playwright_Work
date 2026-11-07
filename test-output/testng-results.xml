@@ -1,146 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-04T23:41:27 IST" name="Default suite" finished-at="2026-11-04T23:41:41 IST" duration-ms="14581">
+  <suite started-at="2026-11-07T19:13:23 IST" name="Default suite" finished-at="2026-11-07T19:13:57 IST" duration-ms="33515">
     <groups>
     </groups>
-    <test started-at="2026-11-04T23:41:27 IST" name="Default test" finished-at="2026-11-04T23:41:41 IST" duration-ms="14581">
-      <class name="Rahul_Shetty_Java_Playwright_NOV.IsEnabledIsVisible_Assertion">
-        <test-method signature="test()[pri:0, instance:Rahul_Shetty_Java_Playwright_NOV.IsEnabledIsVisible_Assertion@19e4653c]" started-at="2026-11-04T23:41:27 IST" name="test" finished-at="2026-11-04T23:41:41 IST" duration-ms="14362" status="FAIL">
-          <exception class="com.microsoft.playwright.PlaywrightException">
-            <message>
-              <![CDATA[Error {
-  message='Error: strict mode violation: getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events ")) resolved to 2 elements:
-    1) <a href="/events">…</a> aka getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events →"))
-    2) <a href="/events" class="hover:text-white transition-colors">Browse Events</a> aka getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events").setExact(true))
-
-  name='Error
-  stack='Error: Error: strict mode violation: getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events ")) resolved to 2 elements:
-    1) <a href="/events">…</a> aka getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events →"))
-    2) <a href="/events" class="hover:text-white transition-colors">Browse Events</a> aka getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events").setExact(true))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\chromium\crExecutionContext.js:79:33)
-    at async LongStandingScope._race (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\utils\manualPromise.js:96:14)
-    at async evaluateExpression (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\javascript.js:229:12)
-    at async Frame._expectInternal (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1341:9)
-    at async C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1293:15
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:935:24)
-    at async C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1288:16
-    at async ProgressController.run (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\progress.js:79:22)
-    at async Frame._expectImpl (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1287:14)
-    at async Frame.expect (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1238:20)
-}
-Call log:
--   - Locator.expect with timeout 5000ms
--   - waiting for getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events "))
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
-  message='Error: strict mode violation: getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events ")) resolved to 2 elements:
-    1) <a href="/events">…</a> aka getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events →"))
-    2) <a href="/events" class="hover:text-white transition-colors">Browse Events</a> aka getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events").setExact(true))
-
-  name='Error
-  stack='Error: Error: strict mode violation: getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events ")) resolved to 2 elements:
-    1) <a href="/events">…</a> aka getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events →"))
-    2) <a href="/events" class="hover:text-white transition-colors">Browse Events</a> aka getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events").setExact(true))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\chromium\crExecutionContext.js:79:33)
-    at async LongStandingScope._race (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\utils\manualPromise.js:96:14)
-    at async evaluateExpression (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\javascript.js:229:12)
-    at async Frame._expectInternal (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1341:9)
-    at async C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1293:15
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:935:24)
-    at async C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1288:16
-    at async ProgressController.run (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\progress.js:79:22)
-    at async Frame._expectImpl (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1287:14)
-    at async Frame.expect (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1238:20)
-}
-Call log:
--   - Locator.expect with timeout 5000ms
--   - waiting for getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events "))
-
-at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
-at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
-at com.microsoft.playwright.impl.LocatorImpl.expectImpl(LocatorImpl.java:671)
-at com.microsoft.playwright.impl.LocatorImpl.lambda$expect$9(LocatorImpl.java:657)
-at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
-at com.microsoft.playwright.impl.LocatorImpl.expect(LocatorImpl.java:657)
-at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:61)
-at com.microsoft.playwright.impl.AssertionsBase.expectImpl(AssertionsBase.java:51)
-at com.microsoft.playwright.impl.LocatorAssertionsImpl.expectTrue(LocatorAssertionsImpl.java:402)
-at com.microsoft.playwright.impl.LocatorAssertionsImpl.isVisible(LocatorAssertionsImpl.java:397)
-at com.microsoft.playwright.assertions.LocatorAssertions.isVisible(LocatorAssertions.java:782)
-at Rahul_Shetty_Java_Playwright_NOV.IsEnabledIsVisible_Assertion.test(IsEnabledIsVisible_Assertion.java:31)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message='Error: strict mode violation: getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events ")) resolved to 2 elements:
-    1) <a href="/events">…</a> aka getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events →"))
-    2) <a href="/events" class="hover:text-white transition-colors">Browse Events</a> aka getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events").setExact(true))
-
-  name='Error
-  stack='Error: Error: strict mode violation: getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events ")) resolved to 2 elements:
-    1) <a href="/events">…</a> aka getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events →"))
-    2) <a href="/events" class="hover:text-white transition-colors">Browse Events</a> aka getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events").setExact(true))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\chromium\crExecutionContext.js:79:33)
-    at async LongStandingScope._race (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\utils\manualPromise.js:96:14)
-    at async evaluateExpression (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\javascript.js:229:12)
-    at async Frame._expectInternal (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1341:9)
-    at async C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1293:15
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:935:24)
-    at async C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1288:16
-    at async ProgressController.run (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\progress.js:79:22)
-    at async Frame._expectImpl (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1287:14)
-    at async Frame.expect (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-16061652063903531484\package\lib\server\frames.js:1238:20)
-}
-Call log:
--   - Locator.expect with timeout 5000ms
--   - waiting for getByRole(AriaRole.LINK, new Page.GetByRoleOptions().setName("Browse Events "))
-
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
-at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
-... 41 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+    <test started-at="2026-11-07T19:13:23 IST" name="Default test" finished-at="2026-11-07T19:13:57 IST" duration-ms="33515">
+      <class name="Rahul_Shetty_Java_Playwright_NOV.E2E_Booking">
+        <test-method signature="test()[pri:0, instance:Rahul_Shetty_Java_Playwright_NOV.E2E_Booking@19e4653c]" started-at="2026-11-07T19:13:23 IST" name="test" finished-at="2026-11-07T19:13:57 IST" duration-ms="33445" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-      </class> <!-- Rahul_Shetty_Java_Playwright_NOV.IsEnabledIsVisible_Assertion -->
+      </class> <!-- Rahul_Shetty_Java_Playwright_NOV.E2E_Booking -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
