@@ -24,7 +24,7 @@ public class Handeling_Child_Window {
 		Page page = bcn.newPage();
 		page.navigate("https://rahulshettyacademy.com/loginpagePractise/");
 		Locator blinkinhtext = page.locator(".blinkingText");
-		Page childWindow = bcn.waitForPage(() -> blinkinhtext.first().click());
+		Page childWindow = bcn.waitForPage(() -> page.locator(".blinkingText").first().click());
 		childWindow.waitForLoadState();
 		String text = childWindow.locator("//p[text()='Please email us at ']").textContent();
 		// Please email us at mentor@rahulshettyacademy.com with below template to
