@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="API_Testing.API_CreateEvent">
+      <class name="Rahul_Shetty_Java_Playwright_NOV.VideoRecording">
         <methods>
-          <include name="createevent"/>
+          <include name="video"/>
         </methods>
-      </class> <!-- API_Testing.API_CreateEvent -->
+      </class> <!-- Rahul_Shetty_Java_Playwright_NOV.VideoRecording -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

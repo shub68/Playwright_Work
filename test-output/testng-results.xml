@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-11T11:53:13 IST" name="Default suite" finished-at="2026-11-11T11:53:17 IST" duration-ms="4355">
+  <suite started-at="2026-11-14T11:16:26 IST" name="Default suite" finished-at="2026-11-14T11:16:39 IST" duration-ms="12247">
     <groups>
     </groups>
-    <test started-at="2026-11-11T11:53:13 IST" name="Default test" finished-at="2026-11-11T11:53:17 IST" duration-ms="4355">
-      <class name="API_Testing.API_deleteEvent">
-        <test-method signature="deleteEvent()[pri:0, instance:API_Testing.API_deleteEvent@4b013c76]" started-at="2026-11-11T11:53:13 IST" name="deleteEvent" finished-at="2026-11-11T11:53:17 IST" duration-ms="4269" status="PASS">
+    <test started-at="2026-11-14T11:16:26 IST" name="Default test" finished-at="2026-11-14T11:16:39 IST" duration-ms="12247">
+      <class name="Rahul_Shetty_Java_Playwright_NOV.Tracing">
+        <test-method signature="tracing()[pri:0, instance:Rahul_Shetty_Java_Playwright_NOV.Tracing@4b013c76]" started-at="2026-11-14T11:16:27 IST" name="tracing" finished-at="2026-11-14T11:16:39 IST" duration-ms="12144" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteEvent -->
-      </class> <!-- API_Testing.API_deleteEvent -->
+        </test-method> <!-- tracing -->
+      </class> <!-- Rahul_Shetty_Java_Playwright_NOV.Tracing -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
