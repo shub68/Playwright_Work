@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Nov 15 11:33:47 IST 2026</td>
+<td>Started on:</td><td>Sun Nov 15 13:12:30 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>10 seconds (10182 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5175 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -77,197 +77,8 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='Rahul_Shetty_Java_Playwright_NOV.SelectOptions.test()'><b>test</b><br>Test class: Rahul_Shetty_Java_Playwright_NOV.SelectOptions</td>
-<td><div><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Error: strict mode violation: getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;)).filter(new Locator.FilterOptions().setHasText(&quot;Slow&quot;)) resolved to 2 elements:
-    1) &lt;div id=&quot;ui-id-1&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slower&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slower&quot;))
-    2) &lt;div id=&quot;ui-id-2&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slow&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;).setExact(true))
-
-  name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;)).filter(new Locator.FilterOptions().setHasText(&quot;Slow&quot;)) resolved to 2 elements:
-    1) &lt;div id=&quot;ui-id-1&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slower&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slower&quot;))
-    2) &lt;div id=&quot;ui-id-2&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slow&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;).setExact(true))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\chromium\crExecutionContext.js:79:33)
-    at async LongStandingScope._race (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\utils\manualPromise.js:96:14)
-    at async evaluateExpression (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\javascript.js:229:12)
-    at async C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\frames.js:965:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\frames.js:935:24)
-    at async C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\frames.js:1023:29
-    at async ProgressController.run (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\progress.js:79:22)
-    at async FrameDispatcher.click (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\dispatchers\frameDispatcher.js:158:12)
-    at async LongStandingScope._race (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\utils\manualPromise.js:96:14)
-    at async FrameDispatcher._handleCommand (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\dispatchers\dispatcher.js:96:14)
-}
-Call log:
--   - waiting for locator(&quot;//iframe[@class=&apos;demo-frame&apos;]&quot;).contentFrame().getByRole(AriaRole.OPTION, new FrameLocator.GetByRoleOptions().setName(&quot;Slow&quot;)).filter(new Locator.FilterOptions().setHasText(&quot;Slow&quot;))
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
-	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
-	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:175)
-	at com.microsoft.playwright.Locator.click(Locator.java:2493)
-	at Rahul_Shetty_Java_Playwright_NOV.SelectOptions.test(SelectOptions.java:39)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Error: strict mode violation: getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;)).filter(new Locator.FilterOptions().setHasText(&quot;Slow&quot;)) resolved to 2 elements:
-    1) &lt;div id=&quot;ui-id-1&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slower&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slower&quot;))
-    2) &lt;div id=&quot;ui-id-2&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slow&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;).setExact(true))
-
-  name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;)).filter(new Locator.FilterOptions().setHasText(&quot;Slow&quot;)) resolved to 2 elements:
-    1) &lt;div id=&quot;ui-id-1&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slower&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slower&quot;))
-    2) &lt;div id=&quot;ui-id-2&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slow&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;).setExact(true))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\chromium\crExecutionContext.js:79:33)
-    at async LongStandingScope._race (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\utils\manualPromise.js:96:14)
-    at async evaluateExpression (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\javascript.js:229:12)
-    at async C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\frames.js:965:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\frames.js:935:24)
-    at async C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\frames.js:1023:29
-    at async ProgressController.run (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\progress.js:79:22)
-    at async FrameDispatcher.click (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\dispatchers\frameDispatcher.js:158:12)
-    at async LongStandingScope._race (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\utils\manualPromise.js:96:14)
-    at async FrameDispatcher._handleCommand (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\dispatchers\dispatcher.js:96:14)
-}
-Call log:
--   - waiting for locator(&quot;//iframe[@class=&apos;demo-frame&apos;]&quot;).contentFrame().getByRole(AriaRole.OPTION, new FrameLocator.GetByRoleOptions().setName(&quot;Slow&quot;)).filter(new Locator.FilterOptions().setHasText(&quot;Slow&quot;))
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
-	... 40 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1888924788", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1888924788'><pre>com.microsoft.playwright.PlaywrightException: Error {
-  message=&apos;Error: strict mode violation: getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;)).filter(new Locator.FilterOptions().setHasText(&quot;Slow&quot;)) resolved to 2 elements:
-    1) &lt;div id=&quot;ui-id-1&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slower&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slower&quot;))
-    2) &lt;div id=&quot;ui-id-2&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slow&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;).setExact(true))
-
-  name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;)).filter(new Locator.FilterOptions().setHasText(&quot;Slow&quot;)) resolved to 2 elements:
-    1) &lt;div id=&quot;ui-id-1&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slower&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slower&quot;))
-    2) &lt;div id=&quot;ui-id-2&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slow&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;).setExact(true))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\chromium\crExecutionContext.js:79:33)
-    at async LongStandingScope._race (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\utils\manualPromise.js:96:14)
-    at async evaluateExpression (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\javascript.js:229:12)
-    at async C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\frames.js:965:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\frames.js:935:24)
-    at async C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\frames.js:1023:29
-    at async ProgressController.run (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\progress.js:79:22)
-    at async FrameDispatcher.click (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\dispatchers\frameDispatcher.js:158:12)
-    at async LongStandingScope._race (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\utils\manualPromise.js:96:14)
-    at async FrameDispatcher._handleCommand (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\dispatchers\dispatcher.js:96:14)
-}
-Call log:
--   - waiting for locator(&quot;//iframe[@class=&apos;demo-frame&apos;]&quot;).contentFrame().getByRole(AriaRole.OPTION, new FrameLocator.GetByRoleOptions().setName(&quot;Slow&quot;)).filter(new Locator.FilterOptions().setHasText(&quot;Slow&quot;))
-
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:56)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:132)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:130)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:118)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
-	at com.microsoft.playwright.impl.FrameImpl.lambda$click$8(FrameImpl.java:243)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:97)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.FrameImpl.click(FrameImpl.java:243)
-	at com.microsoft.playwright.impl.LocatorImpl.click(LocatorImpl.java:175)
-	at com.microsoft.playwright.Locator.click(Locator.java:2493)
-	at Rahul_Shetty_Java_Playwright_NOV.SelectOptions.test(SelectOptions.java:39)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: com.microsoft.playwright.impl.DriverException: Error {
-  message=&apos;Error: strict mode violation: getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;)).filter(new Locator.FilterOptions().setHasText(&quot;Slow&quot;)) resolved to 2 elements:
-    1) &lt;div id=&quot;ui-id-1&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slower&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slower&quot;))
-    2) &lt;div id=&quot;ui-id-2&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slow&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;).setExact(true))
-
-  name=&apos;Error
-  stack=&apos;Error: Error: strict mode violation: getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;)).filter(new Locator.FilterOptions().setHasText(&quot;Slow&quot;)) resolved to 2 elements:
-    1) &lt;div id=&quot;ui-id-1&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slower&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slower&quot;))
-    2) &lt;div id=&quot;ui-id-2&quot; tabindex=&quot;-1&quot; role=&quot;option&quot; class=&quot;ui-menu-item-wrapper&quot;&gt;Slow&lt;/div&gt; aka getByRole(AriaRole.OPTION, new Page.GetByRoleOptions().setName(&quot;Slow&quot;).setExact(true))
-
-    at CRExecutionContext.evaluateWithArguments (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\chromium\crExecutionContext.js:79:33)
-    at async LongStandingScope._race (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\utils\manualPromise.js:96:14)
-    at async evaluateExpression (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\javascript.js:229:12)
-    at async C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\frames.js:965:22
-    at async Frame.retryWithProgressAndTimeouts (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\frames.js:935:24)
-    at async C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\frames.js:1023:29
-    at async ProgressController.run (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\progress.js:79:22)
-    at async FrameDispatcher.click (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\dispatchers\frameDispatcher.js:158:12)
-    at async LongStandingScope._race (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\utils\manualPromise.js:96:14)
-    at async FrameDispatcher._handleCommand (C:\Users\SHUBHA~1\AppData\Local\Temp\playwright-java-18233567294756774767\package\lib\server\dispatchers\dispatcher.js:96:14)
-}
-Call log:
--   - waiting for locator(&quot;//iframe[@class=&apos;demo-frame&apos;]&quot;).contentFrame().getByRole(AriaRole.OPTION, new FrameLocator.GetByRoleOptions().setName(&quot;Slow&quot;)).filter(new Locator.FilterOptions().setHasText(&quot;Slow&quot;))
-
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:259)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:211)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:130)
-	... 40 more
-</pre></div></td>
-<td>10</td>
+<td></td>
+<td>5</td>
 <td>Rahul_Shetty_Java_Playwright_NOV.SelectOptions@4b013c76</td></tr>
 </table><p>
 </body>
